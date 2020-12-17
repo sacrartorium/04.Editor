@@ -6,7 +6,7 @@
  редактором.
  */
 
-#include "../publisher_subscriber.hpp"
+#include "../src/publisher_subscriber.hpp"
 #include "imodel.hpp"
 #include "interface.hpp"
 
