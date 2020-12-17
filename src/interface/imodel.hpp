@@ -5,7 +5,7 @@
  @brief Заголовочный файл, содержащий объявление модели данных.
  */
 
-#include "../src/publisher_subscriber.hpp"
+#include "../publisher_subscriber.hpp"
 #include "icontroller.hpp"
 #include "interface.hpp"
 
