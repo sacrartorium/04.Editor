@@ -4,9 +4,9 @@ set (APPLICATION_NAME editor)
 
 project(${APPLICATION_NAME} VERSION $ENV{TRAVIS_BUILD_NUMBER})
 
-configure_file(version.hpp.in version.hpp)
+configure_file(src/version.hpp.in src/version.hpp)
 
-file(GLOB_RECURSE SOURCES LIST_DIRECTORIES true *.hpp *.cpp)
+file(GLOB_RECURSE SOURCES LIST_DIRECTORIES true src/*.hpp src/*.cpp)
 
 set(SOURCES ${SOURCES})
 
