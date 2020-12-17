@@ -44,7 +44,7 @@ if (MSVC)
     )
 else ()
     target_compile_options(${APPLICATION_NAME} PRIVATE
-        -Wall -Wextra -pedantic -Werror -O0 -g3
+        -Wall -Wextra -pedantic -O0 -g3
     )
 endif()
 
