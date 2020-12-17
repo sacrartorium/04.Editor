@@ -6,7 +6,7 @@ project(${APPLICATION_NAME} VERSION $ENV{TRAVIS_BUILD_NUMBER})
 
 configure_file(src/version.hpp.in src/version.hpp)
 
-file(GLOB_RECURSE SOURCES LIST_DIRECTORIES true interface/*.hpp interface/*.cpp src/*.hpp src/*.cpp)
+file(GLOB_RECURSE SOURCES LIST_DIRECTORIES true src/*.hpp src/*.cpp)
 
 set(SOURCES ${SOURCES})
 
@@ -24,7 +24,7 @@ FIND_PACKAGE(Doxygen)
 if (DOXYGEN_FOUND)
     message(STATUS "Doxygen is found.")
 
-    set(DOXYGEN_INPUT ${CMAKE_SOURCE_DIR})
+    set(DOXYGEN_INPUT ${CMAKE_SOURCE_DIR}/src)
     set(DOXYGEN_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/doc)
     set(DOXYGEN_RECURSIVE NO)
     set(DOXYGEN_PROJECT_NAME ${CMAKE_PROJECT_NAME})
