@@ -6,7 +6,7 @@ project(${APPLICATION_NAME} VERSION $ENV{TRAVIS_BUILD_NUMBER})
 
 configure_file(src/version.hpp.in src/version.hpp)
 
-file(GLOB_RECURSE SOURCES LIST_DIRECTORIES true src/*.hpp src/*.cpp)
+file(GLOB_RECURSE SOURCES LIST_DIRECTORIES true interface/*.hpp interface/*.cpp src/*.hpp src/*.cpp)
 
 set(SOURCES ${SOURCES})
 
